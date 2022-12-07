@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "debug": "^4.3.4",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jquery": "^3.6.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "portfolio_main",
+  "description": "Main Portfolio for jobs",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umaimab/portfolio_main.git"
+  },
+  "keywords": [
+    "Portfolio"
+  ],
+  "author": "Mohammed and Umaima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/umaimab/portfolio_main/issues"
+  },
+  "homepage": "https://github.com/umaimab/portfolio_main#readme"
+}
