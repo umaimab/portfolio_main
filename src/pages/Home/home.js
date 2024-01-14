@@ -51,7 +51,27 @@ const Home = () => {
             </ul>
           </div>
         </div>
+
+        <div className='fourthPanel'>
+          <div className='fourthImg' id='fourthImgContainer'>
+            <div className='imageGrid'>Image 1</div>
+            <div className='imageGrid'>Image 2</div>
+            <div className='imageGrid'>Image 3</div>
+            <div className='imageGrid'>Image 4</div>
+          </div>
+          <div className='fourthHeading'>FourthHeading</div>
+        </div>
+
+        <div className='fifthPanel'>
+          <div className='fifthHeading'>Fifth Heading</div>
+          <div className='fifthImg'>Fifth Image</div>
+        </div>
+      
+      <div className='footer'>
+        Footer
       </div>
+      </div>
+      
     )
   }
 

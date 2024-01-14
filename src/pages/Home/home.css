@@ -79,3 +79,57 @@
 li {
     margin-bottom: 5rem;
 }
+
+.fourthPanel {
+    background-color:firebrick;
+    height: 70vh;
+    display: flex;
+}
+
+.fourthImg {
+    background-color:darkslategrey;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50vw;
+    overflow: hidden;
+}
+
+.imageGrid {
+    background-color: khaki;
+    width: 40%;
+    height: 50%;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: 10rem;
+}
+
+.fifthPanel {
+    background-color: blue;
+    height: 70vh;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.fifthImg {
+    background-color:deepskyblue;
+    display: flex;
+    position: relative;
+    width: 45vw;
+}
+
+.fifthHeading {
+    background-color: chocolate;
+    display: flex;
+    position: relative;
+    width: 55vw;
+}
+
+.footer {
+    background-color: white;
+    height: 25vh;
+    display: flex;
+    box-sizing: border-box;
+}
