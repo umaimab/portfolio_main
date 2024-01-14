@@ -1,0 +1,81 @@
+.firstPanel {
+    background-color: blue;
+    height: 70vh;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.firstImg {
+    background-color: brown;
+    display: flex;
+    position: relative;
+    width: 45vw;
+}
+
+.firstHeading {
+    background-color: chocolate;
+    display: flex;
+    position: relative;
+    width: 55vw;
+}
+
+.secondPanel {
+    background-color:burlywood;
+    height: 70vh;
+    display: flex;
+}
+
+.secondImg {
+    background-color: cornflowerblue;
+    display: flex;
+    position: relative;
+    width: 70vw;
+    overflow: hidden;
+}
+
+.secondHeading {
+    background-color: darkgoldenrod;
+    display: flex;
+    position: relative;
+    width: 30vw;
+}
+
+.imageRow {
+    background-color: darkgreen;
+    width: 40vw;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 10rem;
+}
+
+.thirdPanel {
+    background-color:mediumslateblue;
+    height: 70vh;
+    display: flex;
+}
+
+.thirdHeading {
+    background-color:indigo;
+    display: flex;
+    position: relative;
+    width: 50vw;
+}
+
+.thirdText {
+    background-color:plum;
+    display: flex;
+    position: relative;
+    width: 70vw;
+    overflow: hidden;
+}
+
+.designList {
+    padding: 10rem;
+    justify-content: space-evenly;
+}
+
+li {
+    margin-bottom: 5rem;
+}
