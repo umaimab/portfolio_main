@@ -1,32 +1,46 @@
 .firstPanel {
-    background-color: blue;
     height: 70vh;
     display: flex;
-    box-sizing: border-box;
+    border-bottom: 1px solid;
 }
 
 .firstImg {
-    background-color: brown;
+    background-image:url('https://placehold.co/750');
     display: flex;
     position: relative;
     width: 45vw;
 }
 
 .firstHeading {
-    background-color: chocolate;
     display: flex;
     position: relative;
     width: 55vw;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: space-around;
+}
+
+.firstHeadingText {
+    height:fit-content;
+    margin-left: 3rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.firstText {
+    margin-left: 3rem;
+    font-size: 18px;
+    line-height: 1.5rem;
 }
 
 .secondPanel {
-    background-color:burlywood;
     height: 70vh;
     display: flex;
+    border-bottom: 1px solid;
 }
 
 .secondImg {
-    background-color: cornflowerblue;
     display: flex;
     position: relative;
     width: 70vw;
@@ -34,14 +48,30 @@
 }
 
 .secondHeading {
-    background-color: darkgoldenrod;
     display: flex;
     position: relative;
     width: 30vw;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: space-around;
+}
+
+.secondHeadingText {
+    height:fit-content;
+    margin-left: 3rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.secondText {
+    margin-left: 3rem;
+    font-size: 18px;
+    line-height: 1.5rem;
 }
 
 .imageRow {
-    background-color: darkgreen;
+    background-image:url('https://placehold.co/350x600');
     width: 40vw;
     display: inline-block;
     align-items: center;
@@ -51,80 +81,130 @@
 }
 
 .thirdPanel {
-    background-color:mediumslateblue;
     height: 70vh;
     display: flex;
+    border-bottom: 1px solid;
 }
 
 .thirdHeading {
-    background-color:indigo;
     display: flex;
     position: relative;
     width: 50vw;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.thirdHeadingText {
+    height:fit-content;
+    margin: 5rem 0 0 3rem;
+    font-size: 3rem;
+    font-weight: 900;
 }
 
 .thirdText {
-    background-color:plum;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     position: relative;
-    width: 70vw;
+    width: 55vw;
     overflow: hidden;
-}
-
-.designList {
-    padding: 10rem;
+    padding: 0 3rem 0 3rem;
+    font-size: 18px;
     justify-content: space-evenly;
 }
 
+li::marker {
+    font-size: 3rem;
+    vertical-align: middle;
+}
+
 li {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+    text-align: left;
 }
 
 .fourthPanel {
-    background-color:firebrick;
     height: 70vh;
     display: flex;
+    border-bottom: 1px solid;
 }
 
 .fourthImg {
-    background-color:darkslategrey;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     width: 50vw;
     overflow: hidden;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
 }
 
 .imageGrid {
     background-color: khaki;
-    width: 40%;
-    height: 50%;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
+    background-image:url('https://placehold.co/325x325');
+    width: 45%;
+    height: 45%;
     margin: 1rem;
-    padding: 10rem;
+}
+
+.fourthHeading {
+    display: flex;
+    position: relative;
+    width: 50vw;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.fourthHeadingText {
+    height:fit-content;
+    margin: 5rem 0 0 3rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.fourthText {
+    margin-left: 3rem;
+    font-size: 18px;
+    line-height: 1.5rem;
 }
 
 .fifthPanel {
-    background-color: blue;
     height: 70vh;
     display: flex;
-    box-sizing: border-box;
+    border-bottom: 1px solid;
 }
 
 .fifthImg {
-    background-color:deepskyblue;
+    background-image:url('https://placehold.co/750');
     display: flex;
     position: relative;
     width: 45vw;
 }
 
 .fifthHeading {
-    background-color: chocolate;
     display: flex;
     position: relative;
     width: 55vw;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: space-around;
+}
+
+.fifthHeadingText {
+    height:fit-content;
+    margin-left: 3rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.fifthText {
+    margin-left: 3rem;
+    font-size: 18px;
+    line-height: 1.5rem;
 }
 
 .footer {
