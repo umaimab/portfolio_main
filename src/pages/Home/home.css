@@ -5,16 +5,16 @@
 }
 
 .firstImg {
-    background-image:url('https://placehold.co/750');
+    background-image:url('https://placehold.co/950x700');
     display: flex;
     position: relative;
-    width: 45vw;
+    width: 50vw;
 }
 
 .firstHeading {
     display: flex;
     position: relative;
-    width: 55vw;
+    width: 50vw;
     flex-direction: column;
     align-items: flex-start;
     text-align: left;

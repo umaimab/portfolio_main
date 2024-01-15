@@ -11,8 +11,8 @@ const Footer = () => {
             </div>
             <div>
                 <h3>CONTACT</h3> 
-                <p>Email: umaima.bajaman@gmail.com</p>
-                <p>LinkedIn: www.linkedin.com/in/umaimab</p>
+                <p>Email: umaima.bajaman@gmail.com <br />
+                LinkedIn: www.linkedin.com/in/umaimab</p>
             </div>
         </div>
     )
