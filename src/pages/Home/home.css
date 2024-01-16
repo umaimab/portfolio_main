@@ -1,0 +1,215 @@
+.firstPanel {
+    height: 70vh;
+    display: flex;
+    border-bottom: 1px solid;
+}
+
+.firstImg {
+    background-image:url('https://placehold.co/950x700');
+    display: flex;
+    position: relative;
+    width: 50vw;
+}
+
+.firstHeading {
+    display: flex;
+    position: relative;
+    width: 50vw;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: space-around;
+}
+
+.firstHeadingText {
+    height:fit-content;
+    margin-left: 3rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.firstText {
+    margin-left: 3rem;
+    font-size: 18px;
+    line-height: 1.5rem;
+}
+
+.secondPanel {
+    height: 70vh;
+    display: flex;
+    border-bottom: 1px solid;
+}
+
+.secondImg {
+    display: flex;
+    position: relative;
+    width: 70vw;
+    overflow: hidden;
+}
+
+.secondHeading {
+    display: flex;
+    position: relative;
+    width: 30vw;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: space-around;
+}
+
+.secondHeadingText {
+    height:fit-content;
+    margin-left: 3rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.secondText {
+    margin-left: 3rem;
+    font-size: 18px;
+    line-height: 1.5rem;
+}
+
+.imageRow {
+    background-image:url('https://placehold.co/350x600');
+    width: 40vw;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 10rem;
+}
+
+.thirdPanel {
+    height: 70vh;
+    display: flex;
+    border-bottom: 1px solid;
+}
+
+.thirdHeading {
+    display: flex;
+    position: relative;
+    width: 50vw;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.thirdHeadingText {
+    height:fit-content;
+    margin: 5rem 0 0 3rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.thirdText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    width: 55vw;
+    overflow: hidden;
+    padding: 0 3rem 0 3rem;
+    font-size: 18px;
+    justify-content: space-evenly;
+}
+
+li::marker {
+    font-size: 3rem;
+    vertical-align: middle;
+}
+
+li {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.fourthPanel {
+    height: 70vh;
+    display: flex;
+    border-bottom: 1px solid;
+}
+
+.fourthImg {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 50vw;
+    overflow: hidden;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
+}
+
+.imageGrid {
+    background-color: khaki;
+    background-image:url('https://placehold.co/325x325');
+    width: 45%;
+    height: 45%;
+    margin: 1rem;
+}
+
+.fourthHeading {
+    display: flex;
+    position: relative;
+    width: 50vw;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.fourthHeadingText {
+    height:fit-content;
+    margin: 5rem 0 0 3rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.fourthText {
+    margin-left: 3rem;
+    font-size: 18px;
+    line-height: 1.5rem;
+}
+
+.fifthPanel {
+    height: 70vh;
+    display: flex;
+    border-bottom: 1px solid;
+}
+
+.fifthImg {
+    background-image:url('https://placehold.co/750');
+    display: flex;
+    position: relative;
+    width: 45vw;
+}
+
+.fifthHeading {
+    display: flex;
+    position: relative;
+    width: 55vw;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: space-around;
+}
+
+.fifthHeadingText {
+    height:fit-content;
+    margin-left: 3rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.fifthText {
+    margin-left: 3rem;
+    font-size: 18px;
+    line-height: 1.5rem;
+}
+
+.footer {
+    background-color: white;
+    height: 25vh;
+    display: flex;
+    box-sizing: border-box;
+}
