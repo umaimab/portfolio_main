@@ -19,6 +19,8 @@
 .desktopMenuListItem {
     margin: 1rem;
     cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent */
 }
 
 .desktopMenuListItem:hover {
