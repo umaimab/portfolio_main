@@ -1,0 +1,47 @@
+.panel {
+    height: 80vh;
+    display: flex;
+    border-bottom: 1px solid;
+}
+
+.panelImage {
+    display: flex;
+    position: relative;
+    width: 50vw;
+    padding:5%;
+    border-right: 1px solid;
+}
+
+.panelContent {
+    display: flex;
+    position: relative;
+    width: 50vw;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: space-around;
+}
+
+.panelHeadingText {
+    height:fit-content;
+    margin-left: 2rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.panelBody {
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.panelSubHeading {
+    font-size: 1.5rem;
+}
+
+.panelTagline {
+    font-size: 1.25rem;
+}
