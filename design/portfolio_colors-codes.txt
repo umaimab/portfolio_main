@@ -1,0 +1,11 @@
+Your selected colors:
+
+    Text: #000000 - rgb(0, 0, 0) - hsl(0, 0%, 0%)
+    Background: #e7dfd0 - rgb(231, 223, 208) - hsl(39, 32%, 86%)
+    Primary: #aa8c50 - rgb(170, 140, 80) - hsl(40, 36%, 49%)
+    Secondary: #bea779 - rgb(190, 167, 121) - hsl(40, 35%, 61%)
+    Accent: #000000 - rgb(0, 0, 0) - hsl(0, 0%, 0%)
+
+Realtime Colors link for selected colors: https://www.realtimecolors.com/?colors=000000-e7dfd0-aa8c50-bea779-000000&fonts=SF%20pro-Poppins
+
+Thanks for using RealtimeColors.com!

@@ -7,7 +7,7 @@ import Work from './pages/Work/work'
 
 const MainContainer = () => {
   return (
-    <Router>
+    <Router basename='/'>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/work" element={<Work />} />

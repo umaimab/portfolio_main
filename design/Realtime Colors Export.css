@@ -1,0 +1,97 @@
+/* Color picker reference*/
+/* https://icolorpalette.com/color/antique-paper */
+
+@media (prefers-color-scheme: light) {
+    :root {
+      --text: #000000;
+      --background: #e7dfd0;
+      --primary: #aa8c50;
+      --secondary: #bea779;
+      --accent: #000000;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #ffffff;
+      --background: #2f2718;
+      --primary: #af9155;
+      --secondary: #866f41;
+      --accent: #ffffff;
+    }
+  }
+/* Gradients */
+:root {
+    --linearPrimarySecondary: linear-gradient(#aa8c50, #bea779);
+    --linearPrimaryAccent: linear-gradient(#aa8c50, #000000);
+    --linearSecondaryAccent: linear-gradient(#bea779, #000000);
+    --radialPrimarySecondary: radial-gradient(#aa8c50, #bea779);
+    --radialPrimaryAccent: radial-gradient(#aa8c50, #000000);
+    --radialSecondaryAccent: radial-gradient(#bea779, #000000);
+}
+
+
+
+/* SHADES */
+:root {
+    --text-50: #f2f2f2;
+    --text-100: #e6e6e6;
+    --text-200: #cccccc;
+    --text-300: #b3b3b3;
+    --text-400: #999999;
+    --text-500: #808080;
+    --text-600: #666666;
+    --text-700: #4d4d4d;
+    --text-800: #333333;
+    --text-900: #1a1a1a;
+    --text-950: #0d0d0d;
+    
+    --background-50: #f6f3ee;
+    --background-100: #eee8dd;
+    --background-200: #dcd1bc;
+    --background-300: #cbba9a;
+    --background-400: #baa378;
+    --background-500: #a88c57;
+    --background-600: #877045;
+    --background-700: #655434;
+    --background-800: #433823;
+    --background-900: #221c11;
+    --background-950: #110e09;
+    
+    --primary-50: #f7f4ee;
+    --primary-100: #efe9dc;
+    --primary-200: #ded2ba;
+    --primary-300: #cebc97;
+    --primary-400: #bea574;
+    --primary-500: #ad8f52;
+    --primary-600: #8b7241;
+    --primary-700: #685631;
+    --primary-800: #453921;
+    --primary-900: #231d10;
+    --primary-950: #110e08;
+    
+    --secondary-50: #f7f4ee;
+    --secondary-100: #eee8dd;
+    --secondary-200: #ded2ba;
+    --secondary-300: #cdbb98;
+    --secondary-400: #bda575;
+    --secondary-500: #ac8e53;
+    --secondary-600: #8a7242;
+    --secondary-700: #675532;
+    --secondary-800: #453921;
+    --secondary-900: #221c11;
+    --secondary-950: #110e08;
+    
+    --accent-50: #f2f2f2;
+    --accent-100: #e6e6e6;
+    --accent-200: #cccccc;
+    --accent-300: #b3b3b3;
+    --accent-400: #999999;
+    --accent-500: #808080;
+    --accent-600: #666666;
+    --accent-700: #4d4d4d;
+    --accent-800: #333333;
+    --accent-900: #1a1a1a;
+    --accent-950: #0d0d0d;
+  }
+
+
