@@ -21,7 +21,7 @@ const Home = () => {
   }, []);
   
     return (
-      <div className='firstContainer'>
+      <>
         <Navbar />
         <div className='firstPanel'>
           <div className='firstImg'></div>
@@ -140,7 +140,7 @@ const Home = () => {
           <div className='fifthImg'></div>
         </div>
         <Footer />
-      </div>
+      </>
       
     )
   }
