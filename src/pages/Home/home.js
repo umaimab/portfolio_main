@@ -9,16 +9,16 @@ import './Home.css';
 const Home = () => {
   useEffect(() => {
     const container = document.getElementsByClassName('section__image-works--scroll');
-    
+    const element = container[0];
     const handleWheelScroll = (event) => {
       event.preventDefault();
-      container[0].scrollLeft += event.deltaY;
+      element.scrollLeft += event.deltaY;
     };
 
-    container[0].addEventListener('wheel', handleWheelScroll);
+    element.addEventListener('wheel', handleWheelScroll);
 
     return () => {
-      container[0].removeEventListener('wheel', handleWheelScroll);
+      element.removeEventListener('wheel', handleWheelScroll);
     };
   }, []);
   

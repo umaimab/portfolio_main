@@ -1,4 +1,4 @@
-/* .firstPanel {
+.firstPanel {
     height: 70vh;
     display: flex;
     border-bottom: 1px solid;
@@ -32,4 +32,4 @@
     margin-left: 3rem;
     font-size: 0.938vw;
     line-height: 1.5rem;
-} */
+}

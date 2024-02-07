@@ -5,7 +5,7 @@
 */
 
 .section {
-    height: 70vh;
+    height: 80vh;
     display: flex;
     border-bottom: 1px solid;
 }
@@ -50,6 +50,7 @@
     justify-content: space-between;
     margin: 1rem;
     padding: 10rem;
+    max-height: 600px;
 }
 
 /* DESIGN PROCESS SECTION */
