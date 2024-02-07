@@ -1,67 +1,69 @@
 import React, { useEffect } from 'react';
-import Navbar from '../../components/navbar/navbar'
-import Footer from '../../components/footer/footer'
-import './home.css';
 import '../../styles/global.css';
+import Navbar from '../../components/navbar/Navbar'
+import Footer from '../../components/footer/Footer'
+import Heading from '../../components/heading/Heading';
+import Text from '../../components/text/Text'
+import './Home.css';
 
 const Home = () => {
   useEffect(() => {
-    const container = document.getElementById('secondImgContainer');
+    const container = document.getElementsByClassName('section__image-works--scroll');
     
     const handleWheelScroll = (event) => {
       event.preventDefault();
-      container.scrollLeft += event.deltaY;
+      container[0].scrollLeft += event.deltaY;
     };
 
-    container.addEventListener('wheel', handleWheelScroll);
+    container[0].addEventListener('wheel', handleWheelScroll);
 
     return () => {
-      container.removeEventListener('wheel', handleWheelScroll);
+      container[0].removeEventListener('wheel', handleWheelScroll);
     };
   }, []);
   
     return (
       <>
         <Navbar />
-        <div className='firstPanel'>
-          <div className='firstImg'></div>
-          <div className='firstHeading'>
-            <h1 className='firstHeadingText'>EXPRESSING CREATIVITY <br/>IN PIXELS AND PRINT</h1>
-            <p className='firstText'>Explore a design approach that embraces clean lines, innovation, and <br />
-                simplicity, complemented by striking colors. This portfolio reflects a <br />
-                commitment to thoughtful craftsmanship and a preference for elegance in <br />
-                every detail. With a focus on simplicity, our designs communicate with a quiet <br />
+        {/*FIRST SECTION: EXPRESSING CREATIVITY */}
+        <div className='section'>
+          <div className='section__image' />
+          <div className='section__body'>
+            <Heading>EXPRESSING CREATIVITY <br/>IN PIXELS AND PRINT</Heading>
+            <Text>Explore a design approach that embraces clean lines, innovation, and 
+                simplicity, complemented by striking colors. This portfolio reflects a 
+                commitment to thoughtful craftsmanship and a preference for elegance in 
+                every detail. With a focus on simplicity, our designs communicate with a quiet 
                 yet impactful presence. Experience a design journey where clarity and creativity
-            </p>
+            </Text>
           </div>
         </div>
 
-        <div className='secondPanel'>
-          <div className='secondHeading'>
-          <h1 className='secondHeadingText'>WORK</h1>
-          <p className='secondText'>Explore my portfolio — a blend of <br />
-            freelance projects and personal <br />
-            creations. The visual stories highlight <br />
-            flexibility, demonstrating experience <br />
-            across different realms of graphic <br />
-            design. Each piece reflects clean <br />
+        {/*SECOND SECTION: WORK */}
+        <div className='section'>
+          <div className='section__body'>
+          <Heading>WORK</Heading>
+          <Text>Explore my portfolio — a blend of freelance projects and personal
+            creations. The visual stories highlight flexibility, demonstrating experience
+            across different realms of graphic design. Each piece reflects clean
             design principles and bold choices.
-          </p>
+          </Text>
           </div>
-          <div className='secondImg' id='secondImgContainer'>
-            <div className='imageRow'></div>
-            <div className='imageRow'></div>
-            <div className='imageRow'></div>
-            <div className='imageRow'></div>
-            <div className='imageRow'></div>
+          <div className='section__image-works section__image-works--scroll'>
+            <div className='section__image-row'></div>
+            <div className='section__image-row'></div>
+            <div className='section__image-row'></div>
+            <div className='section__image-row'></div>
+            <div className='section__image-row'></div>
           </div>
         </div>
 
-        <div className='thirdPanel'>
-          <div className='thirdHeading'>
-            <h1 className='thirdHeadingText'>DESIGN PROCESS</h1>
+        {/*THIRD SECTION: DESIGN PROCESS */}
+        <div className='section'>
+          <div className='section__design-body'>
+            <h1 className='section__design-heading'>DESIGN PROCESS</h1>
           </div>
-          <div className='thirdText' >
+          <div className='section__design-text' >
             <ul>
               <li>
                 <b>Inspiration & Research:</b> I begin by immersing myself in the project’s context,
@@ -92,16 +94,17 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='fourthPanel'>
-          <div className='fourthImg' id='fourthImgContainer'>
-            <div className='imageGrid'></div>
-            <div className='imageGrid'></div>
-            <div className='imageGrid'></div>
-            <div className='imageGrid'></div>
+        {/*FOURTH SECTION: SERVICES */}
+        <div className='section'>
+          <div className='section__services-image-container'>
+            <div className='section__services-image-grid'></div>
+            <div className='section__services-image-grid'></div>
+            <div className='section__services-image-grid'></div>
+            <div className='section__services-image-grid'></div>
           </div>
-          <div className='fourthHeading'>
-          <h1 className='fourthHeadingText'>SERVICES</h1>
-          <p className='fourthText'>Welcome to my services! I’m passionate about crafting impactful graphic designs
+          <div className='section__body'>
+          <Heading>SERVICES</Heading>
+          <Text>Welcome to my services! I’m passionate about crafting impactful graphic designs
           and user-focused olutions. Explore how I bring creativity and purpose to every
           project, tailoring designs to leave a lasting impact. Let’s collaborate and bring
           <br />
@@ -123,21 +126,22 @@ const Home = () => {
           <br />
           <b>Social Media Graphics:</b> Crafting engaging visuals for social media platforms to
           boost online presence.
-          </p>
+          </Text>
           </div>
         </div>
 
-        <div className='fifthPanel'>
-          <div className='fifthHeading'>
-            <h1 className='fifthHeadingText'>ABOUT</h1>
-            <p className='fifthText'>Art, for me, isn’t confined to canvases; it’s a pervasive force, inspiring everything <br />
-            from the mundane to the extraordinary. Through formal education and personal <br />
-            exploration, I’ve honed my skills to transform ideas into visual masterpieces. Join <br />
-            me on a professional voyage where creativity meets purpose, and art serves as <br />
+        {/*FIFTH SECTION: ABOUT */}
+        <div className='section'>
+          <div className='section__body'>
+            <Heading>ABOUT</Heading>
+            <Text>Art, for me, isn’t confined to canvases; it’s a pervasive force, inspiring everything 
+            from the mundane to the extraordinary. Through formal education and personal 
+            exploration, I’ve honed my skills to transform ideas into visual masterpieces. Join 
+            me on a professional voyage where creativity meets purpose, and art serves as 
             the guiding force in every endeavor. Let’s bring imagination to life and discover
-            </p>
+            </Text>
           </div>
-          <div className='fifthImg'></div>
+          <div className='section__image'></div>
         </div>
         <Footer />
       </>

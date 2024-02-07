@@ -1,5 +1,5 @@
-.navbar {
-    background: white;
+.nav {
+    background: #e7dfd0;;
     height: 5rem;
     padding: 1rem 2rem;
     display: flex;
@@ -11,33 +11,22 @@
     border-bottom: 2px solid;
 }
 
-.desktopTitle {
+.nav__title {
     position: absolute;
-    left: 49%;
+    left: 47%;
 }
 
-.desktopMenuListItem {
-    margin: 1rem;
+.nav__desktop-menu-item {
+    padding: 1rem;
     cursor: pointer;
     text-decoration: none; /* Remove underline */
     color: inherit; /* Inherit the color from the parent */
 }
 
-.desktopMenuListItem:hover {
+.nav__desktop-menu-item:hover {
     color: black;
     padding-bottom: 0.5rem;
     border-bottom: 3px solid black;
-}
-
-.desktopMenuBtn {
-    background: white;
-    color: black;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    border-radius: 2rem;
 }
 
 .active {
@@ -46,39 +35,11 @@
     border-bottom: 3px solid black;
 }
 
-.mobMenu{
-    display: none;
-    object-fit: cover;
-    height: 1.8rem;
-}
-
-.navMenu {
-    position: absolute;
-    top: 4rem;
-    right: 2rem;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem;
-    height: fit-content;
-    min-width: 15rem;
-    background: rgb(40, 40, 40);
-    border-radius: 1rem;
-}
-
-.listItem {
-    color: white;
-    padding: 0.5rem 3rem;
-    margin: 0.25rem;
-    background: rgb(30,30,30);
-
-}
-
 @media screen and (max-width: 720px){
     .mobMenu {
         display: flex;
     }
-    .desktopMenu {
+    .nav__desktop-menu {
         display: none;
     }
     .desktopMenuBtn {

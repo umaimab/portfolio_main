@@ -1,6 +1,6 @@
 import React from 'react'
-import './panel.css';
-import Text from '../../components/text/text';
+import './Panel.css';
+import Text from '../text/Text';
 
 const Panel = ({image, heading, subheading, tagline, description}) => {
     return (

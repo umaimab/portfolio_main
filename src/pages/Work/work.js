@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from '../../components/navbar/navbar'
-import Footer from '../../components/footer/footer'
-import './work.css';
+import Navbar from '../../components/navbar/Navbar'
+import Footer from '../../components/footer/Footer'
+import './Work.css';
 import '../../styles/global.css';
-import Panel from '../../components/panel/panel'
+import Panel from '../../components/panel/Panel'
 
 const Work = () => {
   const panelsData = [
