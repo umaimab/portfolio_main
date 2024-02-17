@@ -2,4 +2,11 @@
     margin-top: 3rem;
     font-size: 1.1rem;
     line-height: 1.5rem;
+    max-width: 40vw;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.text-visible {
+    opacity: 1;
 }

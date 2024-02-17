@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home/home';
-import Work from './pages/Work/work'
+import Home from './pages/home/Home'
+import Work from './pages/work/Work'
 // import Services from './pages/Services/services';
 // import About from './pages/About/about'
 
@@ -11,7 +11,7 @@ const MainContainer = () => {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/work" element={<Work />} />
-        {/* <Route exact path="/services" element={<Services />} />
+        {/* <Route path="/services" element={<Services />} />
         <Route path="/about" element={<About />} /> */}
       </Routes>
     </Router>

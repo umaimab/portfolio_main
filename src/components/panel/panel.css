@@ -1,10 +1,5 @@
-.panel {
-    height: 80vh;
-    display: flex;
-    border-bottom: 1px solid;
-}
-
-.panelImage {
+/* Section image w/ padding */
+.section__image-padding {
     display: flex;
     position: relative;
     width: 50vw;
@@ -12,7 +7,8 @@
     border-right: 1px solid;
 }
 
-.panelContent {
+/* Information panels inside each section */
+.panel {
     display: flex;
     position: relative;
     width: 50vw;
@@ -20,28 +16,19 @@
     align-items: flex-start;
     text-align: left;
     justify-content: space-around;
+    padding: 3rem;
 }
 
-.panelHeadingText {
+.panel__heading {
     height:fit-content;
-    margin-left: 2rem;
-    font-size: 3rem;
+    font-size: 3vw;
     font-weight: 900;
 }
 
-.panelBody {
-    display:flex;
-    position: relative;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    margin-left: 2rem;
-}
-
-.panelSubHeading {
+.panel__subheading {
     font-size: 1.5rem;
 }
 
-.panelTagline {
+.panel__tag {
     font-size: 1.25rem;
 }

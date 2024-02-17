@@ -1,9 +1,11 @@
 import React from 'react';
-import Navbar from '../../components/navbar/navbar'
-import Footer from '../../components/footer/footer'
-import './work.css';
+import Navbar from '../../components/navbar/Navbar'
+import Footer from '../../components/footer/Footer'
+import Heading from '../../components/heading/Heading';
+import Text from '../../components/text/Text';
+import './Work.css';
 import '../../styles/global.css';
-import Panel from '../../components/panel/panel'
+import Panel from '../../components/panel/Panel'
 
 const Work = () => {
   const panelsData = [
@@ -48,11 +50,11 @@ const Work = () => {
     return (
       <>
         <Navbar />
-        <div className='firstPanel'>
-          <div className='firstImg'></div>
-          <div className='firstHeading'>
-            <h1 className='firstHeadingText'>PORTFOLIO HIGHLIGHTS</h1>
-            <p className='firstText'>
+        <div className='section'>
+          <div className='section__image'></div>
+          <div className='section__body'>
+            <Heading>PORTFOLIO HIGHLIGHTS</Heading>
+            <Text className='firstText'>
             Welcome to Umaima’s Portfolio—a concise showcase of my expertise in UX/UI, <br />
             branding, posters, and marketing design. As a seasoned graphic designer, I <br />
             seamlessly blend creativity with strategic insight to deliver impactful visual <br />
@@ -63,7 +65,7 @@ const Work = () => {
             marketing assets. Each project reflects a commitment to precision, innovation, <br />
             and simplistic design. Explore the potential for collaboration, and let’s discuss <br />
             how my skills can contribute to your team’s success.
-            </p>
+            </Text>
           </div>
         </div>
 

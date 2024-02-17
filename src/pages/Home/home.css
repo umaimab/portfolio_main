@@ -1,17 +1,23 @@
-.firstPanel {
-    height: 70vh;
+/*  
+##############################
+##### Common CSS Classes #####
+##############################
+*/
+
+.section {
+    height: 80vh;
     display: flex;
     border-bottom: 1px solid;
 }
 
-.firstImg {
+.section__image {
     background-image:url('https://placehold.co/950x700');
     display: flex;
     position: relative;
     width: 50vw;
 }
 
-.firstHeading {
+.section__body {
     display: flex;
     position: relative;
     width: 50vw;
@@ -19,58 +25,24 @@
     align-items: flex-start;
     text-align: left;
     justify-content: space-around;
+    padding: 3rem;
 }
 
-.firstHeadingText {
-    height:fit-content;
-    margin-left: 3rem;
-    font-size: 3rem;
-    font-weight: 900;
-}
+/*  
+#################################### 
+##### Section specific classes #####
+####################################
+*/
 
-.firstText {
-    margin-left: 3rem;
-    font-size: 18px;
-    line-height: 1.5rem;
-}
-
-.secondPanel {
-    height: 70vh;
-    display: flex;
-    border-bottom: 1px solid;
-}
-
-.secondImg {
+/* WORKS SECTION */
+.section__image-works {
     display: flex;
     position: relative;
     width: 70vw;
     overflow: hidden;
 }
 
-.secondHeading {
-    display: flex;
-    position: relative;
-    width: 30vw;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    justify-content: space-around;
-}
-
-.secondHeadingText {
-    height:fit-content;
-    margin-left: 3rem;
-    font-size: 3rem;
-    font-weight: 900;
-}
-
-.secondText {
-    margin-left: 3rem;
-    font-size: 18px;
-    line-height: 1.5rem;
-}
-
-.imageRow {
+.section__image-row {
     background-image:url('https://placehold.co/350x600');
     width: 40vw;
     display: inline-block;
@@ -78,15 +50,11 @@
     justify-content: space-between;
     margin: 1rem;
     padding: 10rem;
+    max-height: 600px;
 }
 
-.thirdPanel {
-    height: 70vh;
-    display: flex;
-    border-bottom: 1px solid;
-}
-
-.thirdHeading {
+/* DESIGN PROCESS SECTION */
+.section__design-body {
     display: flex;
     position: relative;
     width: 50vw;
@@ -95,14 +63,14 @@
     text-align: left;
 }
 
-.thirdHeadingText {
+.section__design-heading {
     height:fit-content;
     margin: 5rem 0 0 3rem;
     font-size: 3rem;
     font-weight: 900;
 }
 
-.thirdText {
+.section__design-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -111,9 +79,12 @@
     overflow: hidden;
     padding: 0 3rem 0 3rem;
     font-size: 18px;
+    text-wrap:balance;
     justify-content: space-evenly;
 }
 
+/* SERVICES SECTION */
+/* List item marker modifications */
 li::marker {
     font-size: 3rem;
     vertical-align: middle;
@@ -124,13 +95,7 @@ li {
     text-align: left;
 }
 
-.fourthPanel {
-    height: 70vh;
-    display: flex;
-    border-bottom: 1px solid;
-}
-
-.fourthImg {
+.section__services-image-container {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -141,75 +106,10 @@ li {
     align-items: center;
 }
 
-.imageGrid {
+.section__services-image-grid {
     background-color: khaki;
     background-image:url('https://placehold.co/325x325');
     width: 45%;
     height: 45%;
     margin: 1rem;
-}
-
-.fourthHeading {
-    display: flex;
-    position: relative;
-    width: 50vw;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-}
-
-.fourthHeadingText {
-    height:fit-content;
-    margin: 5rem 0 0 3rem;
-    font-size: 3rem;
-    font-weight: 900;
-}
-
-.fourthText {
-    margin-left: 3rem;
-    font-size: 18px;
-    line-height: 1.5rem;
-}
-
-.fifthPanel {
-    height: 70vh;
-    display: flex;
-    border-bottom: 1px solid;
-}
-
-.fifthImg {
-    background-image:url('https://placehold.co/750');
-    display: flex;
-    position: relative;
-    width: 45vw;
-}
-
-.fifthHeading {
-    display: flex;
-    position: relative;
-    width: 55vw;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    justify-content: space-around;
-}
-
-.fifthHeadingText {
-    height:fit-content;
-    margin-left: 3rem;
-    font-size: 3rem;
-    font-weight: 900;
-}
-
-.fifthText {
-    margin-left: 3rem;
-    font-size: 18px;
-    line-height: 1.5rem;
-}
-
-.footer {
-    background-color: white;
-    height: 25vh;
-    display: flex;
-    box-sizing: border-box;
 }

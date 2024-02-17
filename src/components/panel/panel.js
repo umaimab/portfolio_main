@@ -1,16 +1,17 @@
 import React from 'react'
-import './panel.css';
-import Text from '../../components/text/text';
+import './Panel.css';
+import Text from '../text/Text';
+import Heading from '../heading/Heading';
 
 const Panel = ({image, heading, subheading, tagline, description}) => {
     return (
-      <div className='panel'>
-        <img src={image} alt={heading} className='panelImage'/>
-          <div className='panelContent'>
-            <h1 className='panelHeadingText'>{heading}</h1>
-            <div className='panelBody'>
-              <p className='panelSubHeading'>{subheading}</p>
-              <p className='panelTagline'>{tagline}</p>
+      <div className='section'>
+        <img src={image} alt={heading} className='section__image-padding'/>
+          <div className='panel'>
+            <Heading>{heading}</Heading>
+            <div>
+              <p className='panel__subheading'>{subheading}</p>
+              <p className='panel__tag'>{tagline}</p>
               <Text>{description}</Text>
           </div>
           </div>      

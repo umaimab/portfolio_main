@@ -24,19 +24,12 @@
 .firstHeadingText {
     height:fit-content;
     margin-left: 3rem;
-    font-size: 3rem;
+    font-size: 3vw;
     font-weight: 900;
 }
 
 .firstText {
     margin-left: 3rem;
-    font-size: 18px;
+    font-size: 0.938vw;
     line-height: 1.5rem;
-}
-
-.footer {
-    background-color: white;
-    height: 25vh;
-    display: flex;
-    box-sizing: border-box;
 }
