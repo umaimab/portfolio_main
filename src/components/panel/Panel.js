@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './Panel.css';
 import Text from '../text/Text';
 import Heading from '../heading/Heading';
