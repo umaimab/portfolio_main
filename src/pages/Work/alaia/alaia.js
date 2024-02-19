@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from '../../components/navbar/Navbar'
-import Footer from '../../components/footer/Footer'
-import Heading from '../../components/heading/Heading';
-import Text from '../../components/text/Text';
-import './Work.css';
-import '../../styles/global.css';
+import Navbar from '../../../../components/navbar/Navbar'
+import Footer from '../../../../components/footer/Footer'
+import Heading from '../../../../components/heading/Heading';
+import Text from '../../../../components/text/Text';
+import './Alaia.css';
+import '../../../styles/global.css';
 
 const Studio = () => {
 
@@ -14,7 +14,7 @@ const Studio = () => {
         <div className='section'>
           <div className='section__image'></div>
           <div className='section__body'>
-            <Heading>Studio</Heading>
+            <Heading>Alaia</Heading>
             <Text className='firstText'>
             Welcome to Umaima’s Portfolio—a concise showcase of my expertise in UX/UI, <br />
             branding, posters, and marketing design. As a seasoned graphic designer, I <br />
