@@ -5,7 +5,7 @@ import Heading from '../../components/heading/Heading';
 import Text from '../../components/text/Text';
 import './Work.css';
 import '../../styles/global.css';
-import Panel from '../../components/panel/Panel'
+import Panel from '../../components/panel/Panel';
 
 const Work = () => {
   const panelsData = [
