@@ -10,39 +10,40 @@ import Panel from '../../components/panel/Panel';
 const Work = () => {
   const panelsData = [
     { 
-      image: 'https://placehold.co/325x325', 
-      heading:'STUDIO', 
-      subheading:'APP PROTOTYPE', 
-      tagline:'XD | InDesign', 
+      image:'https://placehold.co/325x325',
+      heading:'STUDIO',
+      link:'/work/studio',
+      subheading:'APP PROTOTYPE',
+      tagline:'XD | InDesign',
       description:'Created an app prototype using XD and InDesign'
     },
 
     { 
-      image: 'https://placehold.co/325x325', 
-      heading:'ALAIA', 
-      subheading:'ECO-FRIENDLY BRANDING', 
-      tagline:'InDesign | Photoshop', 
+      image:'https://placehold.co/325x325',
+      heading:'ALAIA',
+      subheading:'ECO-FRIENDLY BRANDING',
+      tagline:'InDesign | Photoshop',
       description:'Creted eco-friendly branding using InDesign and Photoshop.'
     },
     { 
-      image: 'https://placehold.co/325x325', 
-      heading:'CDPC: CANADIAN DRUG POLICY COALITION CAMPAIGN', 
-      subheading:'ADVERTISING CAMPAIGN', 
-      tagline:'InDesign | Photoshop | XD', 
+      image:'https://placehold.co/325x325',
+      heading:'CDPC: CANADIAN DRUG POLICY COALITION CAMPAIGN',
+      subheading:'ADVERTISING CAMPAIGN',
+      tagline:'InDesign | Photoshop | XD',
       description: 'This is a description'
     },
     { 
-      image: 'https://placehold.co/325x325', 
-      heading:'SHIFT MAGAZINE', 
-      subheading:'EDITORIAL DESIGN', 
-      tagline:'InDesign | Photoshop | After Effects', 
+      image:'https://placehold.co/325x325',
+      heading:'SHIFT MAGAZINE',
+      subheading:'EDITORIAL DESIGN',
+      tagline:'InDesign | Photoshop | After Effects',
       description:'This is a description.'
     },
     { 
-      image: 'https://placehold.co/325x325', 
-      heading:'BODYEASE THERAPIES', 
-      subheading:'BRANDING', 
-      tagline:'Illustrator | InDesign', 
+      image:'https://placehold.co/325x325',
+      heading:'BODYEASE THERAPIES',
+      subheading:'BRANDING',
+      tagline:'Illustrator | InDesign',
       description:'This is a description.'
     },
   ];

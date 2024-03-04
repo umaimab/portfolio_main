@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from '../../../../components/navbar/Navbar'
-import Footer from '../../../../components/footer/Footer'
-import Heading from '../../../../components/heading/Heading';
-import Text from '../../../../components/text/Text';
+import Navbar from 'src/components/navbar/Navbar';
+import Footer from 'src/components/footer/Footer';
+import Heading from 'src/components/heading/Heading';
+import Text from 'src/components/text/Text';
 import './Studio.css';
-import '../../../styles/global.css';
+import 'src/styles/global.css';
 
 const Studio = () => {
 
@@ -29,8 +29,7 @@ const Studio = () => {
             </Text>
           </div>
         </div>
-
-
+        
         <Footer />
       </>
       
