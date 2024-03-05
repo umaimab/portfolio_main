@@ -21,6 +21,7 @@ const Work = () => {
     { 
       image:'https://placehold.co/325x325',
       heading:'ALAIA',
+      link:'/work/alaia',
       subheading:'ECO-FRIENDLY BRANDING',
       tagline:'InDesign | Photoshop',
       description:'Creted eco-friendly branding using InDesign and Photoshop.'
