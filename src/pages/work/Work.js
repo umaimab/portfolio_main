@@ -11,13 +11,12 @@ const Work = () => {
   const panelsData = [
     { 
       image:'https://placehold.co/325x325',
-      heading:'STUDIO',
-      link:'/work/studio',
-      subheading:'APP PROTOTYPE',
+      heading:'JUK RECORDS',
+      link:'/work/juk-records',
+      subheading:'WEBSITE DESIGN',
       tagline:'XD | InDesign',
-      description:'Created an app prototype using XD and InDesign'
+      description:'This is description.'
     },
-
     { 
       image:'https://placehold.co/325x325',
       heading:'ALAIA',
@@ -47,6 +46,14 @@ const Work = () => {
       tagline:'Illustrator | InDesign',
       description:'This is a description.'
     },
+    { 
+      image:'https://placehold.co/325x325',
+      heading:'STUDIO',
+      link:'/work/studio',
+      subheading:'APP PROTOTYPE',
+      tagline:'XD | InDesign',
+      description:'Created an app prototype using XD and InDesign'
+    }
   ];
 
     return (
