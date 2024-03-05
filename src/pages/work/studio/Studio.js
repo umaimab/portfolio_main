@@ -15,7 +15,7 @@ const Studio = () => {
           <div className='section__image'></div>
           <div className='section__body'>
             <Heading>Studio</Heading>
-            <Text className='firstText'>
+            <Text>
             Welcome to Umaima’s Portfolio—a concise showcase of my expertise in UX/UI, <br />
             branding, posters, and marketing design. As a seasoned graphic designer, I <br />
             seamlessly blend creativity with strategic insight to deliver impactful visual <br />
