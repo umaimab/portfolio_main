@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.9541f04a.css",
-    "main.js": "/static/js/main.525bb830.js",
+    "main.js": "/static/js/main.bd683f34.js",
     "static/js/787.02627b16.chunk.js": "/static/js/787.02627b16.chunk.js",
+    "static/media/Portfolio_Umaima.pdf": "/static/media/Portfolio_Umaima.8fe34cf7c4a2829af276.pdf",
     "static/media/SF-Pro-Text-Bold.otf": "/static/media/SF-Pro-Text-Bold.171e620e032b7e72ca9c.otf",
     "static/media/SF-Pro-Text-Thin.otf": "/static/media/SF-Pro-Text-Thin.ea8d0353cb0bd2ec9519.otf",
     "static/media/SF-Pro-Text-Regular.otf": "/static/media/SF-Pro-Text-Regular.ba21d41dbb34b2e04643.otf",
-    "static/media/pdf.worker.min.js": "/static/media/pdf.worker.min.95a779a4ff1e95889f88.js",
     "static/media/Work_Img4.jpg": "/static/media/Work_Img4.e549bb429becb2f62d2c.jpg",
     "static/media/Work_Img5.jpg": "/static/media/Work_Img5.85b0c0c7b04c3466c53b.jpg",
     "static/media/Work_Img2.jpg": "/static/media/Work_Img2.918aa4f5317a2750ef2f.jpg",
@@ -15,11 +15,11 @@
     "static/media/Homepage Img.jpg": "/static/media/Homepage Img.a30baa409146275a1730.jpg",
     "index.html": "/index.html",
     "main.9541f04a.css.map": "/static/css/main.9541f04a.css.map",
-    "main.525bb830.js.map": "/static/js/main.525bb830.js.map",
+    "main.bd683f34.js.map": "/static/js/main.bd683f34.js.map",
     "787.02627b16.chunk.js.map": "/static/js/787.02627b16.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9541f04a.css",
-    "static/js/main.525bb830.js"
+    "static/js/main.bd683f34.js"
   ]
 }
