@@ -4,7 +4,7 @@ import './Heading.css';
 const Heading = ({children}) => {
     useEffect(() => {
         function checkForVisibility() {
-            var headers = document.querySelectorAll(".section__heading");
+            var headers = document.querySelectorAll(".section__heading, .section__design-heading");
             headers.forEach(function(header) {
               if (isElementInViewport(header)) {
                 header.classList.add("section__heading-visible");

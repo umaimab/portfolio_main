@@ -80,9 +80,9 @@ const Home = () => {
         {/*THIRD SECTION: DESIGN PROCESS */}
         <div className='section'>
           <div className='section__design-body'>
-            <h1 className='section__design-heading'>DESIGN PROCESS</h1>
+            <h1 className='section__heading section__design-heading'>DESIGN PROCESS</h1>
           </div>
-          <div className='section__design-text' >
+          <div className='text section__design-text' >
             <ul>
               <li>
                 <b>Inspiration & Research:</b> I begin by immersing myself in the project’s context,

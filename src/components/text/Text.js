@@ -4,7 +4,7 @@ import './Text.css';
 const Text = ({children}) => {
   useEffect(() => {
     function checkForVisibility() {
-        var headers = document.querySelectorAll(".text");
+        var headers = document.querySelectorAll(".text, .section__design-text");
         headers.forEach(function(header) {
           if (isElementInViewport(header)) {
             header.classList.add("text-visible");

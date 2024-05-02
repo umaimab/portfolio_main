@@ -12,7 +12,7 @@ const Navbar = () => {
           </div>
 
           <div className='nav__title'>
-            <Link activeclass='active' to='/' className ='nav__desktop-menu-item'>PORTFOLIO</Link>
+            <Link activeclass='active' to='/' className ='nav__desktop-menu-item'><b>PORTFOLIO</b></Link>
           </div>
       </nav>
     )
