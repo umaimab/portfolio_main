@@ -1,29 +1,16 @@
 import '../../styles/global.css';
-import { useCallback, useState } from 'react';
+import { useState } from 'react';
 import Navbar from '../../components/navbar/Navbar'
-import Footer from '../../components/footer/Footer'
 import { pdfjs, Document, Page } from 'react-pdf'
-import Heading from '../../components/heading/Heading';
-import Text from '../../components/text/Text'
+import pdfjsWorker from 'pdfjs-dist/build/pdf.worker.entry'
 import './Portfolio.css';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css'
 import 'react-pdf/dist/esm/Page/TextLayer.css'
+import pdfFile from './Portfolio_Umaima.pdf'
 
-import { PDFDocumentProxy } from 'pdfjs-dist';
-
-
-
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.js',
-  import.meta.url,
-).toString();
-
-const resizeObserverOptions = {};
+pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 
 const maxWidth = '900';
-
-let PDFFile = null;
-
 
 const Portfolio = () => {  
   // const [numPages, setNumPages] = useState(null);
@@ -47,7 +34,7 @@ const Portfolio = () => {
         {/*FIRST SECTION: EXPRESSING CREATIVITY */}
 
             <div className='section__document'>
-              <Document file='Portfolio_Umaima.pdf' onLoadSuccess={onDocumentLoadSuccess} >
+              <Document file={`${pdfFile}`} onLoadSuccess={onDocumentLoadSuccess} >
               {Array.from(new Array(numPages), (el, index) => (
               <Page
                 key={`page_${index + 1}`}
