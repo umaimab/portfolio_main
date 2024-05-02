@@ -4,7 +4,9 @@
         "module":"CommonJS",
         "target":"ES6",
         "paths": {
-            "src*":["./src/*"]
+            "src*":["./src/*"],
+            "assets*":["./assets/*"],
+            "public*":["./public/*"]
         }
     },
     "exclude":["node_modules"]

@@ -1,10 +1,21 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../../styles/global.css';
 import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
 import Heading from '../../components/heading/Heading';
 import Text from '../../components/text/Text'
 import './Home.css';
+
+/* Image Imports */
+import homeImg from '../../assets/Homepage Img.jpg';
+import workImage1 from '../../assets/Portoflio Website Work Images/Work_Img1.jpg'
+import workImage2 from '../../assets/Portoflio Website Work Images/Work_Img2.jpg'
+import workImage3 from '../../assets/Portoflio Website Work Images/Work_Img3.jpg'
+import workImage4 from '../../assets/Portoflio Website Work Images/Work_Img4.jpg'
+import workImage5 from '../../assets/Portoflio Website Work Images/Work_Img5.jpg'
+
+const workImages = [workImage1, workImage2, workImage3, workImage4, workImage5];
 
 const Home = () => {
   useEffect(() => {
@@ -15,19 +26,24 @@ const Home = () => {
       element.scrollLeft += event.deltaY;
     };
 
-    element.addEventListener('wheel', handleWheelScroll);
+    element.addEventListener('wheel', handleWheelScroll, {passive: false});
 
     return () => {
       element.removeEventListener('wheel', handleWheelScroll);
     };
   }, []);
+
+  const firstSectionImage = {
+    backgroundImage:`url('${homeImg}')`,
+    backgroundRepeat: 'no-repeat'
+  }
   
     return (
       <>
         <Navbar />
         {/*FIRST SECTION: EXPRESSING CREATIVITY */}
         <div className='section'>
-          <div className='section__image' />
+          <div className='section__image' style={firstSectionImage}/>
           <div className='section__body'>
             <Heading>EXPRESSING CREATIVITY <br/>IN PIXELS AND PRINT</Heading>
             <Text>Explore a design approach that embraces clean lines, innovation, and 
@@ -48,13 +64,16 @@ const Home = () => {
             across different realms of graphic design. Each piece reflects clean
             design principles and bold choices.
           </Text>
+          <Link activeclass='active' to={'/portfolio'} spy="true" smooth="true" offset={-50} duration={500} className ='nav__desktop-menu-item'>View more</Link>
           </div>
           <div className='section__image-works section__image-works--scroll'>
-            <div className='section__image-row'></div>
-            <div className='section__image-row'></div>
-            <div className='section__image-row'></div>
-            <div className='section__image-row'></div>
-            <div className='section__image-row'></div>
+            {workImages.map((image, index) => (
+              <div key={index} className='section__image-row' style={{
+                backgroundImage: `url('${image}')`,
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'contain'
+              }}></div>
+            ))}
           </div>
         </div>
 
@@ -97,10 +116,10 @@ const Home = () => {
         {/*FOURTH SECTION: SERVICES */}
         <div className='section'>
           <div className='section__services-image-container'>
+            {/* <div className='section__services-image-grid'></div>
             <div className='section__services-image-grid'></div>
             <div className='section__services-image-grid'></div>
-            <div className='section__services-image-grid'></div>
-            <div className='section__services-image-grid'></div>
+            <div className='section__services-image-grid'></div> */}
           </div>
           <div className='section__body'>
           <Heading>SERVICES</Heading>
@@ -141,7 +160,6 @@ const Home = () => {
             the guiding force in every endeavor. Let’s bring imagination to life and discover
             </Text>
           </div>
-          <div className='section__image'></div>
         </div>
         <Footer />
       </>

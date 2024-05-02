@@ -11,7 +11,7 @@
 }
 
 .section__image {
-    background-image:url('https://placehold.co/950x700');
+    /* background-image:url('https://placehold.co/950x700'); */
     display: flex;
     position: relative;
     width: 50vw;
@@ -48,7 +48,7 @@
     display: inline-block;
     align-items: center;
     justify-content: space-between;
-    margin: 1rem;
+    margin: 1rem 0;
     padding: 10rem;
     max-height: 600px;
 }

@@ -14,7 +14,7 @@ const Panel = ({image, heading, link, subheading, tagline, description}) => {
               <p className='panel__subheading'>{subheading}</p>
               <p className='panel__tag'>{tagline}</p>
               <Text>{description}</Text>
-              <Link activeclass='active' to={link} spy={true} smooth={true} offset={-50} duration={500} className ='nav__desktop-menu-item'>View more</Link>
+              <Link activeclass='active' to={link} spy="true" smooth="true" offset={-50} duration={500} className ='nav__desktop-menu-item'>View more</Link>
           </div>
           </div>      
 

@@ -1,24 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/home/Home';
-import Work from './pages/work/Work';
-import Studio from './pages/work/studio/Studio';
-import Alaia from './pages/work/alaia/Alaia';
-import JUKRecords from './pages/work/juk-records/Juk-Records';
-// import Services from './pages/Services/services';
-// import About from './pages/About/about'
+import Portfolio from './pages/portfolio/Portfolio';
 
 const MainContainer = () => {
   return (
     <Router basename='/'>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/work/studio" element={<Studio />} />
-        <Route path="/work/alaia" element={<Alaia />} />
-        <Route path="/work/juk-records" element={<JUKRecords />} />
-        {/* <Route path="/services" element={<Services />} />
-        <Route path="/about" element={<About />} /> */}
+        <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
     </Router>
   );
