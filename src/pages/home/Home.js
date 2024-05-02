@@ -19,19 +19,32 @@ const workImages = [workImage1, workImage2, workImage3, workImage4, workImage5];
 
 const Home = () => {
   useEffect(() => {
-    const container = document.getElementsByClassName('section__image-works--scroll');
-    const element = container[0];
-    const handleWheelScroll = (event) => {
-      event.preventDefault();
-      element.scrollLeft += event.deltaY;
-    };
+    /* Infinite Scroll */
+    const scrollers = document.querySelectorAll('.scroller');
+    if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      addAnimation();
+    }
+  
+    function addAnimation() {
+      scrollers.forEach(scroller => {
+        scroller.setAttribute('data-animated', true);
 
-    element.addEventListener('wheel', handleWheelScroll, {passive: false});
+        const scrollerInner = scroller.querySelector('.scroller__inner');
+        const scrollerContent = Array.from(scrollerInner.children);
 
-    return () => {
-      element.removeEventListener('wheel', handleWheelScroll);
+        console.log(scrollerInner);
+
+        scrollerContent.forEach(item => {
+          console.log('Duplicate');
+          const duplicatedItem = item.cloneNode(true);
+          duplicatedItem.setAttribute('aria-hidden', true);
+          scrollerInner.appendChild(duplicatedItem);
+        })
+      });
     };
   }, []);
+
+
 
   const firstSectionImage = {
     backgroundImage:`url('${homeImg}')`,
@@ -66,14 +79,12 @@ const Home = () => {
           </Text>
           <Link activeclass='active' to={'/portfolio'} spy="true" smooth="true" offset={-50} duration={500} className ='nav__desktop-menu-item'>View more</Link>
           </div>
-          <div className='section__image-works section__image-works--scroll'>
-            {workImages.map((image, index) => (
-              <div key={index} className='section__image-row' style={{
-                backgroundImage: `url('${image}')`,
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: 'contain'
-              }}></div>
-            ))}
+          <div className='section__image-works scroller'>
+            <div className='scroller__inner'>
+              {workImages.map((image, index) => (
+                <div key={index} className='section__image-row' style={{ backgroundImage: `url('${image}')` }}></div>
+              ))}
+            </div>
           </div>
         </div>
 

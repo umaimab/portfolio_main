@@ -38,19 +38,45 @@
 .section__image-works {
     display: flex;
     position: relative;
-    width: 70vw;
+    width: 50vw;
+    padding: 5rem;
     overflow: hidden;
 }
 
 .section__image-row {
     background-image:url('https://placehold.co/350x600');
-    width: 40vw;
-    display: inline-block;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1rem 0;
-    padding: 10rem;
-    max-height: 600px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 250px;
+    margin-right: 1rem;
+}
+
+.scroller__inner {
+    display: flex;
+    position: relative;
+}
+
+.scroller[data-animated=true]{
+    overflow:hidden;
+    -webkit-mask: linear-gradient(
+        90deg, 
+        transparent, 
+        white 20%, 
+        white 70%, 
+        transparent
+    );
+    mask: linear-gradient(90deg, transparent, white 20%, white 70%, transparent);
+    
+}
+
+.scroller[data-animated=true] .scroller__inner {
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    to {
+        transform:translate(-50%);
+    }
 }
 
 /* DESIGN PROCESS SECTION */
