@@ -1,5 +1,5 @@
 .nav {
-    background: white;;
+    background: white;
     height: 5rem;
     padding: 1rem 2rem;
     display: flex;
@@ -14,6 +14,10 @@
 .nav__title {
     position: absolute;
     left: 47%;
+}
+
+.nav__desktop-menu {
+    display:flex;
 }
 
 .nav__desktop-menu-item {
@@ -35,14 +39,75 @@
     border-bottom: 3px solid black;
 }
 
+.nav__mob {
+    display: none;
+
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.nav__mob-menu {
+    display: none;
+    max-height: 20px;
+}
+
+.nav__mob-items {
+    display: none;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top:49px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0;
+}
+
+.nav__mob-menu-item {
+    display: none;
+    padding: 2rem 0;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent */
+    font-weight: bold;
+    font-size: 50px;
+}
+
 @media screen and (max-width: 720px){
-    .mobMenu {
+    .nav {
+        height: 3rem;
+        padding: 1rem;
+        border-bottom: 1px solid;
+    }
+
+    .nav__mob {
         display: flex;
     }
+
+    .nav__mob-menu {
+        display: flex;
+    }
+
+    .nav__mob-items {
+        display: flex;
+    }
+
+    .nav__mob-menu-item {
+        display: flex;
+    }
+
     .nav__desktop-menu {
         display: none;
     }
-    .desktopMenuBtn {
+    .nav__desktop-menu-item {
         display: none;
     }
+
+
 }

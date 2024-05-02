@@ -28,6 +28,27 @@
     padding: 3rem;
 }
 
+@media screen and (max-width: 720px) {
+    .section {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .section__image {
+        width: 100vw;
+        height: 70vh;
+        background-size: contain;
+        background-position: center;
+        order: 3;
+    }
+
+    .section__body {
+        width: 100vw;
+        padding: 1rem;
+        order: 2;
+    }
+}
+
 /*  
 #################################### 
 ##### Section specific classes #####
@@ -54,6 +75,18 @@
 .scroller__inner {
     display: flex;
     position: relative;
+}
+
+@media screen and (max-width: 720px) {
+    .section__image-works {
+        width: 100vw;
+        height: 70vh;
+        order: 2;
+    }
+
+    .section__image-row {  
+        min-width: 200px;
+    }
 }
 
 .scroller[data-animated=true]{
@@ -87,6 +120,7 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
+    padding: 3rem;
 }
 
 .section__design-heading {
@@ -109,7 +143,6 @@
     justify-content: space-evenly;
 }
 
-/* SERVICES SECTION */
 /* List item marker modifications */
 li::marker {
     font-size: 3rem;
@@ -121,6 +154,33 @@ li {
     text-align: left;
 }
 
+@media screen and (max-width: 720px) {
+    .section__design-body {
+        width: 100vw;
+        padding: 1rem;
+    }
+
+    .section__design-heading {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .section__design-text {
+        width: 100vw;
+        font-size: 1rem;
+        padding: 0 1rem 0 1rem;
+    }
+
+    li::marker {
+        font-size: 1rem;
+    }
+
+    li {
+        margin-bottom: 1rem;;
+    }
+}
+
+/* SERVICES SECTION */
 .section__services-image-container {
     display: flex;
     justify-content: space-evenly;

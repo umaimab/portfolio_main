@@ -8,6 +8,13 @@
 }
   
 .section__heading-visible {
-opacity: 1;
-transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 720px) {
+    .section__heading {
+        font-size: 2rem;
+        order: 1;
+    }
 }

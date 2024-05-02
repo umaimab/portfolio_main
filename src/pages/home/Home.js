@@ -20,6 +20,7 @@ const workImages = [workImage1, workImage2, workImage3, workImage4, workImage5];
 const Home = () => {
   useEffect(() => {
     /* Infinite Scroll */
+    /* Credits: Kevin Powell https://youtu.be/iLmBy-HKIAw?si=33a75_-Ds1hbVriN */
     const scrollers = document.querySelectorAll('.scroller');
     if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       addAnimation();
@@ -126,12 +127,12 @@ const Home = () => {
 
         {/*FOURTH SECTION: SERVICES */}
         <div className='section'>
-          <div className='section__services-image-container'>
-            {/* <div className='section__services-image-grid'></div>
+          {/* <div className='section__services-image-container'>
             <div className='section__services-image-grid'></div>
             <div className='section__services-image-grid'></div>
-            <div className='section__services-image-grid'></div> */}
-          </div>
+            <div className='section__services-image-grid'></div>
+            <div className='section__services-image-grid'></div>
+          </div> */}
           <div className='section__body'>
           <Heading>SERVICES</Heading>
           <Text>Welcome to my services! I’m passionate about crafting impactful graphic designs

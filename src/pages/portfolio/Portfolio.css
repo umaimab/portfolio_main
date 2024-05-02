@@ -7,3 +7,31 @@
 .section__document {
     background-color: white;
 }
+
+@media screen and (max-width: 720px) {
+    .section__document {
+        max-width: 100%;
+        left: 0px;
+        overflow-x: auto;
+    }
+
+    .react-pdf__Document{
+        width: 100% !important;
+        overflow: auto;
+    }
+
+    .react-pdf__Page__canvas {
+        margin: 0 auto;
+        width: 100% !important;
+        height: 100% !important;
+    }
+    
+    .react-pdf__Page__textContent {
+        width: 100% !important;
+    }
+
+    .react-pdf__Page__annotations {
+        width: 100% !important;
+    }
+    
+}

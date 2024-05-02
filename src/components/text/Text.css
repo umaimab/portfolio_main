@@ -10,3 +10,13 @@
 .text-visible {
     opacity: 1;
 }
+
+@media screen and (max-width: 720px) {
+    .text{
+        font-size: 1rem;
+        order: 2;
+        max-width: 100vw;
+        margin-top: 1rem;
+    }
+
+}
