@@ -56,6 +56,35 @@
 */
 
 /* WORKS SECTION */
+
+.section__link {
+    position: relative;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent */
+}
+
+.section__link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px; /* Adjust thickness of the underline */
+    background-color: black;
+    transition: width 0.3s ease; /* Add transition for width */
+}
+
+.section__link:hover::after {
+    width: 100%; /* Expand width to 100% on hover */
+}
+  
+.section__link:hover {
+    color: black;
+    padding-bottom: 0.5rem;
+}
+
 .section__image-works {
     display: flex;
     position: relative;
@@ -77,28 +106,16 @@
     position: relative;
 }
 
-@media screen and (max-width: 720px) {
-    .section__image-works {
-        width: 100vw;
-        height: 70vh;
-        order: 2;
-    }
-
-    .section__image-row {  
-        min-width: 200px;
-    }
-}
-
 .scroller[data-animated=true]{
     overflow:hidden;
     -webkit-mask: linear-gradient(
         90deg, 
         transparent, 
-        white 20%, 
-        white 70%, 
+        white 10%, 
+        white 90%, 
         transparent
     );
-    mask: linear-gradient(90deg, transparent, white 20%, white 70%, transparent);
+    mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
     
 }
 
@@ -109,6 +126,41 @@
 @keyframes scroll {
     to {
         transform:translate(-50%);
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .section__image-works {
+        width: 100vw;
+        height: 70vh;
+        order: 2;
+    }
+
+    .section__link {
+        order: 3;
+        margin-top: 2rem;
+        margin-bottom: -2rem;
+        border-bottom: 3px solid black;
+    }
+
+    .section__image-row {  
+        min-width: 200px;
+    }
+
+    .scroller[data-animated=true]{
+        -webkit-mask: linear-gradient(
+            90deg, 
+            transparent, 
+            white 20%, 
+            white 80%, 
+            transparent
+        );
+        mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    }
+    
+
+    .section__remove-mob {
+        height: 0;
     }
 }
 

@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-import menuButton from '../../assets/menu-button.svg'
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -9,26 +8,32 @@ const Navbar = () => {
     return (
       <nav className='nav'>
           <div className='nav__desktop-menu'>
-              <Link activeclass='active' to='/' spy="true" smooth="true" offset={-50} duration={500} className ='nav__desktop-menu-item'>HOME</Link>
-              <Link activeclass='active' to='/portfolio' spy="true" smooth="true" offset={-50} duration={500} className ='nav__desktop-menu-item'>WORK</Link>
+              <Link to='/' spy="true" smooth="true" offset={-50} duration={500} className ='nav__desktop-menu-item'>HOME</Link>
+              <Link to='/portfolio' spy="true" smooth="true" offset={-50} duration={500} className ='nav__desktop-menu-item'>WORK</Link>
           </div>
 
           <div className='nav__title'>
-            <Link activeclass='active' to='/' className ='nav__desktop-menu-item'><b>PORTFOLIO</b></Link>
+            <Link to='/' className ='nav__desktop-menu-item'><b>PORTFOLIO</b></Link>
           </div>
 
           <div className='nav__mob'>
-            <Link activeclass='active' to='/' style={{
+            <svg className={showMenu ? 'nav__mob-button-svg menu-open' : 'nav__mob-button-svg'} onClick={()=>setShowMenu(!showMenu)}>
+              <line x1="0" y1="50%" x2="100%" y2="50%" class="top" shape-rendering="crispEdges" />
+              <line x1="0" y1="50%" x2="100%" y2="50%" class="middle" shape-rendering="crispEdges" />
+              <line x1="0" y1="50%" x2="100%" y2="50%" class="bottom" shape-rendering="crispEdges" />
+            </svg>
+            <Link to='/' style={{
               textDecoration: 'none',
-              color: 'inherit'}}><b>PORTFOLIO</b></Link>
-              <img src={`${menuButton}`} alt='Menu' className='nav__mob-menu' onClick={()=>setShowMenu(!showMenu)} />
+              color: 'inherit',
+              fontSize: '1.1rem'}}>
+              <b>PORTFOLIO</b>
+            </Link>
           </div>
           
-            <div className='nav__mob-items' style={{display: showMenu ? 'flex':'none'}}>
-              <Link activeClass='active' to='/' spy="true" smooth="true" offset={-50} duration={500} className ='nav__mob-menu-item' onClick={()=>setShowMenu(false)}>HOME</Link>
-              <Link activeClass='active' to='/portfolio' spy="true" smooth="true" offset={-50} duration={500} className ='nav__mob-menu-item' onClick={()=>setShowMenu(false)}>WORK</Link>
-            </div>
-          
+          <div className={`nav__mob-items${showMenu ? ' active' : ''}`}>
+              <Link to='/' spy="true" smooth="true" offset={-50} duration={500} className ='nav__mob-menu-item' onClick={()=>setShowMenu(false)}>HOME</Link>
+              <Link to='/portfolio' spy="true" smooth="true" offset={-50} duration={500} className ='nav__mob-menu-item' onClick={()=>setShowMenu(false)}>WORK</Link>
+          </div>
       </nav>
     )
   }

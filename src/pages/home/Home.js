@@ -33,10 +33,7 @@ const Home = () => {
         const scrollerInner = scroller.querySelector('.scroller__inner');
         const scrollerContent = Array.from(scrollerInner.children);
 
-        console.log(scrollerInner);
-
         scrollerContent.forEach(item => {
-          console.log('Duplicate');
           const duplicatedItem = item.cloneNode(true);
           duplicatedItem.setAttribute('aria-hidden', true);
           scrollerInner.appendChild(duplicatedItem);
@@ -64,7 +61,7 @@ const Home = () => {
                 simplicity, complemented by striking colors. This portfolio reflects a 
                 commitment to thoughtful craftsmanship and a preference for elegance in 
                 every detail. With a focus on simplicity, our designs communicate with a quiet 
-                yet impactful presence. Experience a design journey where clarity and creativity
+                yet impactful presence. Experience a design journey where clarity and creativity.
             </Text>
           </div>
         </div>
@@ -78,7 +75,7 @@ const Home = () => {
             across different realms of graphic design. Each piece reflects clean
             design principles and bold choices.
           </Text>
-          <Link activeclass='active' to={'/portfolio'} spy="true" smooth="true" offset={-50} duration={500} className ='nav__desktop-menu-item'>View more</Link>
+          <Link to={'/portfolio'} spy="true" smooth="true" offset={-50} duration={500} className ='section__link'>View more</Link>
           </div>
           <div className='section__image-works scroller'>
             <div className='scroller__inner'>
@@ -163,6 +160,7 @@ const Home = () => {
 
         {/*FIFTH SECTION: ABOUT */}
         <div className='section'>
+        <div className='section__image section__remove-mob'></div>
           <div className='section__body'>
             <Heading>ABOUT</Heading>
             <Text>Art, for me, isn’t confined to canvases; it’s a pervasive force, inspiring everything 
