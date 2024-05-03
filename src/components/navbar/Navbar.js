@@ -18,9 +18,9 @@ const Navbar = () => {
 
           <div className='nav__mob'>
             <svg className={showMenu ? 'nav__mob-button-svg menu-open' : 'nav__mob-button-svg'} onClick={()=>setShowMenu(!showMenu)}>
-              <line x1="0" y1="50%" x2="100%" y2="50%" class="top" shape-rendering="crispEdges" />
-              <line x1="0" y1="50%" x2="100%" y2="50%" class="middle" shape-rendering="crispEdges" />
-              <line x1="0" y1="50%" x2="100%" y2="50%" class="bottom" shape-rendering="crispEdges" />
+              <line x1="0" y1="50%" x2="100%" y2="50%" className="top" shapeRendering="crispEdges" />
+              <line x1="0" y1="50%" x2="100%" y2="50%" className="middle" shapeRendering="crispEdges" />
+              <line x1="0" y1="50%" x2="100%" y2="50%" className="bottom" shapeRendering="crispEdges" />
             </svg>
             <Link to='/' style={{
               textDecoration: 'none',

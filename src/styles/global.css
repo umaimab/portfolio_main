@@ -28,6 +28,10 @@ body, html {
     background-color: white;
 }
 
+h1 {
+    margin: 1rem 0 1rem 0;
+}
+
 * {
     box-sizing: border-box;
 }

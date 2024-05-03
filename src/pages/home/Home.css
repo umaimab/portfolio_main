@@ -36,8 +36,8 @@
 
     .section__image {
         width: 100vw;
-        height: 70vh;
-        background-size: contain;
+        height: 50vh;
+        background-size: 35rem;
         background-position: center;
         order: 3;
     }
@@ -214,13 +214,14 @@ li {
 
     .section__design-heading {
         font-size: 2rem;
-        margin: 0;
+        margin: 1rem 0 1rem 0;
     }
 
     .section__design-text {
         width: 100vw;
         font-size: 1rem;
         padding: 0 1rem 0 1rem;
+        margin: 0;
     }
 
     li::marker {
