@@ -5,7 +5,7 @@
 */
 
 .section {
-    height: 80vh;
+    height: 765px;
     display: flex;
     border-bottom: 1px solid;
 }
@@ -14,8 +14,11 @@
     /* background-image:url('https://placehold.co/950x700'); */
     display: flex;
     position: relative;
-    background-size: 100vh;
-    width: 50vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: auto;
 }
 
 .section__body {
@@ -29,6 +32,7 @@
     padding: 3rem;
 }
 
+/* Responsive media queries*/
 @media screen and (max-width: 720px) {
     .section {
         height: auto;
@@ -57,7 +61,6 @@
 */
 
 /* WORKS SECTION */
-
 .section__link {
     position: relative;
     padding-bottom: 0.5rem;
@@ -102,6 +105,7 @@
     margin-right: 1rem;
 }
 
+/* WORKS Image Animation*/
 .scroller__inner {
     display: flex;
     position: relative;
@@ -130,18 +134,20 @@
     }
 }
 
+/* Responsive design for WORKS SECTION*/
 @media screen and (max-width: 720px) {
-    .section__image-works {
-        width: 100vw;
-        height: 70vh;
-        order: 2;
-    }
 
     .section__link {
         order: 3;
         margin-top: 2rem;
         margin-bottom: -2rem;
         border-bottom: 3px solid black;
+    }
+
+    .section__image-works {
+        width: 100vw;
+        height: 70vh;
+        order: 2;
     }
 
     .section__image-row {  
@@ -159,7 +165,6 @@
         mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
     }
     
-
     .section__remove-mob {
         height: 0;
     }
@@ -191,7 +196,7 @@
     width: 100vw;
     overflow: hidden;
     padding: 0 1rem 0 1rem;
-    font-size: 1.2vw;
+    font-size: 1.1rem;
     text-wrap:pretty;
     justify-content: space-evenly;
     margin: 0;
@@ -208,6 +213,7 @@ li {
     text-align: left;
 }
 
+/* Responsive design  for DESIGN PROCESS SECTION*/
 @media screen and (max-width: 720px) {
     .section__design-body {
         width: 100vw;
@@ -236,20 +242,6 @@ li {
 }
 
 /* SERVICES SECTION */
-.section__services-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-    width: 100vw;
-    overflow: hidden;
-    padding: 0 1rem 0 1rem;
-    font-size: 1vw;
-    text-wrap:balance;
-    justify-content: space-evenly;
-    margin: 0;
-}
-
 .section__services-image-container {
     display: flex;
     justify-content: space-evenly;

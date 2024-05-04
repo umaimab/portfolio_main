@@ -46,7 +46,6 @@ const Home = () => {
 
   const firstSectionImage = {
     backgroundImage:`url('${homeImg}')`,
-    backgroundRepeat: 'no-repeat'
   }
   
     return (
@@ -131,7 +130,6 @@ const Home = () => {
             <div className='section__services-image-grid'></div>
           </div> */}
           <div className='section__body'>
-            <div className='section__services-text'>
             <Heading>SERVICES</Heading>
             <Text>Welcome to my services! I’m passionate about crafting impactful graphic designs
             and user-focused olutions. Explore how I bring creativity and purpose to every
@@ -156,7 +154,6 @@ const Home = () => {
             <b>Social Media Graphics:</b> Crafting engaging visuals for social media platforms to
             boost online presence.
             </Text>
-            </div>
           </div>
         </div>
 
