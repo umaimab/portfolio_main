@@ -45,11 +45,11 @@
 
 /*** Mode Croix ***/
 .nav__mob-button-svg.menu-open .top {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
+  transform: translateY(0%) rotate(45deg);
+  -webkit-transform: translateY(0%) rotate(45deg);
+  -moz-transform: translateY(0%) rotate(45deg);
+  -ms-transform: translateY(0%) rotate(45deg);
+  -o-transform: translateY(0%) rotate(45deg);
   stroke-linecap: round;
 }
 
@@ -62,11 +62,11 @@
   opacity: 0;
 }
 
-.nav__mob-button-svg.menu-open line.bottom {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
+.nav__mob-button-svg.menu-open .bottom {
+  transform: translateY(0%) rotate(-45deg);
+  -webkit-transform: translateY(0%) rotate(-45deg);
+  -moz-transform: translateY(0%) rotate(-45deg);
+  -ms-transform: translateY(0%) rotate(-45deg);
+  -o-transform: translateY(0%) rotate(-45deg);
   stroke-linecap: round;
 }

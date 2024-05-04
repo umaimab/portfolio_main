@@ -71,6 +71,7 @@
 .nav__mob-logo {
     display: flex;
     height: 100%;
+    width: 31px;
     object-fit: contain;
 }
 
