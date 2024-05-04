@@ -14,6 +14,7 @@
     /* background-image:url('https://placehold.co/950x700'); */
     display: flex;
     position: relative;
+    background-size: 100vh;
     width: 50vw;
 }
 
@@ -168,7 +169,7 @@
 .section__design-body {
     display: flex;
     position: relative;
-    width: 50vw;
+    width: 55vw;
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
@@ -187,17 +188,18 @@
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    width: 55vw;
+    width: 100vw;
     overflow: hidden;
-    padding: 0 3rem 0 3rem;
-    font-size: 18px;
-    text-wrap:balance;
+    padding: 0 1rem 0 1rem;
+    font-size: 1.2vw;
+    text-wrap:pretty;
     justify-content: space-evenly;
+    margin: 0;
 }
 
 /* List item marker modifications */
 li::marker {
-    font-size: 3rem;
+    font-size: 2rem;
     vertical-align: middle;
 }
 
@@ -234,6 +236,20 @@ li {
 }
 
 /* SERVICES SECTION */
+.section__services-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    padding: 0 1rem 0 1rem;
+    font-size: 1vw;
+    text-wrap:balance;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
 .section__services-image-container {
     display: flex;
     justify-content: space-evenly;

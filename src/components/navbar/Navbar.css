@@ -16,9 +16,19 @@
     left: 47%;
 }
 
+.nav__title-link {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.1rem;
+    padding: 1rem;
+    margin-right: 2rem
+}
+
 .nav__desktop-menu {
     display:flex;
 }
+
 
 .nav__desktop-menu-item {
     position: relative;
@@ -192,7 +202,12 @@
     .nav__desktop-menu {
         display: none;
     }
+    
     .nav__desktop-menu-item {
+        display: none;
+    }
+
+    .nav__title{
         display: none;
     }
 

@@ -131,30 +131,32 @@ const Home = () => {
             <div className='section__services-image-grid'></div>
           </div> */}
           <div className='section__body'>
-          <Heading>SERVICES</Heading>
-          <Text>Welcome to my services! I’m passionate about crafting impactful graphic designs
-          and user-focused olutions. Explore how I bring creativity and purpose to every
-          project, tailoring designs to leave a lasting impact. Let’s collaborate and bring
-          <br />
-          <br />
-          <b>Web Design (UI/UX):</b> Creating visually stunning and user-friendly websites for a
-          seamless online presence.
-          <br />
-          <br />
-          <b>Branding:</b> Developing comprehensive brands including packages, logos, color
-          schemes, and visual guidelines.
-          <br />
-          <br />
-          <b>Illustration:</b> Bringing concepts to life with vibrant visuals
-          <br />
-          <br />
-          <b>Print Collateral:</b> Designing print materials such as brochures, business cards, and
-          posters for effective offline marketing.
-          <br />
-          <br />
-          <b>Social Media Graphics:</b> Crafting engaging visuals for social media platforms to
-          boost online presence.
-          </Text>
+            <div className='section__services-text'>
+            <Heading>SERVICES</Heading>
+            <Text>Welcome to my services! I’m passionate about crafting impactful graphic designs
+            and user-focused olutions. Explore how I bring creativity and purpose to every
+            project, tailoring designs to leave a lasting impact. Let’s collaborate and bring
+            <br />
+            <br />
+            <b>Web Design (UI/UX):</b> Creating visually stunning and user-friendly websites for a
+            seamless online presence.
+            <br />
+            <br />
+            <b>Branding:</b> Developing comprehensive brands including packages, logos, color
+            schemes, and visual guidelines.
+            <br />
+            <br />
+            <b>Illustration:</b> Bringing concepts to life with vibrant visuals
+            <br />
+            <br />
+            <b>Print Collateral:</b> Designing print materials such as brochures, business cards, and
+            posters for effective offline marketing.
+            <br />
+            <br />
+            <b>Social Media Graphics:</b> Crafting engaging visuals for social media platforms to
+            boost online presence.
+            </Text>
+            </div>
           </div>
         </div>
 

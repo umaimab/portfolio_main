@@ -8,12 +8,14 @@ const Navbar = () => {
     return (
       <nav className='nav'>
           <div className='nav__desktop-menu'>
-              <Link to='/' spy="true" smooth="true" offset={-50} duration={500} className ='nav__desktop-menu-item'>HOME</Link>
-              <Link to='/portfolio' spy="true" smooth="true" offset={-50} duration={500} className ='nav__desktop-menu-item'>WORK</Link>
+              <Link to='/' spy="true" smooth="true" offset={-50} duration={500} className='nav__desktop-menu-item'>HOME</Link>
+              <Link to='/portfolio' spy="true" smooth="true" offset={-50} duration={500} className='nav__desktop-menu-item'>WORK</Link>
           </div>
 
           <div className='nav__title'>
-            <Link to='/' className ='nav__desktop-menu-item'><b>PORTFOLIO</b></Link>
+          <Link className='nav__title-link' to='/'>
+              <b>PORTFOLIO</b>
+            </Link>
           </div>
 
           <div className='nav__mob'>
