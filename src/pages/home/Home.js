@@ -59,8 +59,9 @@ const Home = () => {
             <Text>Explore a design approach that embraces clean lines, innovation, and 
                 simplicity, complemented by striking colors. This portfolio reflects a 
                 commitment to thoughtful craftsmanship and a preference for elegance in 
-                every detail. With a focus on simplicity, our designs communicate with a quiet 
-                yet impactful presence. Experience a design journey where clarity and creativity.
+                every detail. With a focus on simplicity, my designs communicate with a quiet 
+                yet impactful presence. Experience a design journey where clarity and creativity intersect,
+                adorned with a hint of captivating allure.
             </Text>
           </div>
         </div>
@@ -132,8 +133,9 @@ const Home = () => {
           <div className='section__body'>
             <Heading>SERVICES</Heading>
             <Text>Welcome to my services! I’m passionate about crafting impactful graphic designs
-            and user-focused olutions. Explore how I bring creativity and purpose to every
-            project, tailoring designs to leave a lasting impact. Let’s collaborate and bring
+            and user-focused solutions. Explore how I bring creativity and purpose to every
+            project, tailoring designs to leave a lasting impact. Let's collaborate and bring
+            your vision to life.
             <br />
             <br />
             <b>Web Design (UI/UX):</b> Creating visually stunning and user-friendly websites for a
@@ -167,6 +169,7 @@ const Home = () => {
             exploration, I’ve honed my skills to transform ideas into visual masterpieces. Join 
             me on a professional voyage where creativity meets purpose, and art serves as 
             the guiding force in every endeavor. Let’s bring imagination to life and discover
+            the artistry hidden in the world around us.
             </Text>
           </div>
         </div>
