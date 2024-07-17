@@ -1,13 +1,35 @@
+/* SF PRO Font */
+@font-face {
+    font-family: 'SF Pro';
+    src: local('SF Pro'), url('../fonts/SF-Pro-Text-Thin.otf'), format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
 @font-face {
     font-family: 'SF Pro';
     src: local('SF Pro'), url('../fonts/SF-Pro-Text-Regular.otf'), format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'SF Pro';
+    src: local('SF Pro'), url('../fonts/SF-Pro-Text-Bold.otf'), format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'SF Pro', sans-serif;
-    background-color: #e7dfd0;
+    background-color: white;
+}
+
+h1 {
+    margin: 1rem 0 1rem 0;
 }
 
 * {

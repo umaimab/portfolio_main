@@ -1,0 +1,72 @@
+.nav__mob-button-svg {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transform: scaleX(-1);
+}
+
+.nav__mob-button-svg line {
+  stroke: black;
+  transition: transform 0.3s;
+  transform-origin: center;
+  stroke-width: 3px;
+}
+
+.nav__mob-button-svg .top {
+  transform: translateY(-35%);
+  -webkit-transform: translateY(-35%);
+  -moz-transform: translateY(-35%);
+  -ms-transform: translateY(-35%);
+  -o-transform: translateY(-35%);
+}
+
+.nav__mob-button-svg .middle {
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transition: opacity .3s, transform .3s;
+  -webkit-transition: opacity .3s, transform .3s;
+  -moz-transition: opacity .3s, transform .3s;
+  -ms-transition: opacity .3s, transform .3s;
+  -o-transition: opacity .3s, transform .3s;
+
+}
+
+.nav__mob-button-svg .bottom {
+  transform: translateY(33%);
+  -webkit-transform: translateY(33%);
+  -moz-transform: translateY(33%);
+  -ms-transform: translateY(33%);
+  -o-transform: translateY(33%);
+}
+
+/*** Mode Croix ***/
+.nav__mob-button-svg.menu-open .top {
+  transform: translateY(0%) rotate(45deg);
+  -webkit-transform: translateY(0%) rotate(45deg);
+  -moz-transform: translateY(0%) rotate(45deg);
+  -ms-transform: translateY(0%) rotate(45deg);
+  -o-transform: translateY(0%) rotate(45deg);
+  stroke-linecap: round;
+}
+
+.nav__mob-button-svg.menu-open .middle {
+  transform: scaleX(0.1);
+  -webkit-transform: scaleX(0.1);
+  -moz-transform: scaleX(0.1);
+  -ms-transform: scaleX(0.1);
+  -o-transform: scaleX(0.1);
+  opacity: 0;
+}
+
+.nav__mob-button-svg.menu-open .bottom {
+  transform: translateY(0%) rotate(-45deg);
+  -webkit-transform: translateY(0%) rotate(-45deg);
+  -moz-transform: translateY(0%) rotate(-45deg);
+  -ms-transform: translateY(0%) rotate(-45deg);
+  -o-transform: translateY(0%) rotate(-45deg);
+  stroke-linecap: round;
+}

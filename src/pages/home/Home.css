@@ -5,16 +5,20 @@
 */
 
 .section {
-    height: 80vh;
+    height: 765px;
     display: flex;
     border-bottom: 1px solid;
 }
 
 .section__image {
-    background-image:url('https://placehold.co/950x700');
+    /* background-image:url('https://placehold.co/950x700'); */
     display: flex;
     position: relative;
-    width: 50vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: auto;
 }
 
 .section__body {
@@ -28,6 +32,28 @@
     padding: 3rem;
 }
 
+/* Responsive media queries*/
+@media screen and (max-width: 720px) {
+    .section {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .section__image {
+        width: 100vw;
+        height: 50vh;
+        background-size: 35rem;
+        background-position: center;
+        order: 3;
+    }
+
+    .section__body {
+        width: 100vw;
+        padding: 1rem;
+        order: 2;
+    }
+}
+
 /*  
 #################################### 
 ##### Section specific classes #####
@@ -35,32 +61,124 @@
 */
 
 /* WORKS SECTION */
+.section__link {
+    position: relative;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent */
+}
+
+.section__link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px; /* Adjust thickness of the underline */
+    background-color: black;
+    transition: width 0.3s ease; /* Add transition for width */
+}
+
+.section__link:hover::after {
+    width: 100%; /* Expand width to 100% on hover */
+}
+  
+.section__link:hover {
+    color: black;
+    padding-bottom: 0.5rem;
+}
+
 .section__image-works {
     display: flex;
     position: relative;
-    width: 70vw;
+    width: 50vw;
+    padding: 5rem;
     overflow: hidden;
 }
 
 .section__image-row {
     background-image:url('https://placehold.co/350x600');
-    width: 40vw;
-    display: inline-block;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1rem;
-    padding: 10rem;
-    max-height: 600px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 250px;
+    margin-right: 1rem;
+}
+
+/* WORKS Image Animation*/
+.scroller__inner {
+    display: flex;
+    position: relative;
+}
+
+.scroller[data-animated=true]{
+    overflow:hidden;
+    -webkit-mask: linear-gradient(
+        90deg, 
+        transparent, 
+        white 10%, 
+        white 90%, 
+        transparent
+    );
+    mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+    
+}
+
+.scroller[data-animated=true] .scroller__inner {
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    to {
+        transform:translate(-50%);
+    }
+}
+
+/* Responsive design for WORKS SECTION*/
+@media screen and (max-width: 720px) {
+
+    .section__link {
+        order: 3;
+        margin-top: 2rem;
+        margin-bottom: -2rem;
+        border-bottom: 3px solid black;
+    }
+
+    .section__image-works {
+        width: 100vw;
+        height: 70vh;
+        order: 2;
+    }
+
+    .section__image-row {  
+        min-width: 200px;
+    }
+
+    .scroller[data-animated=true]{
+        -webkit-mask: linear-gradient(
+            90deg, 
+            transparent, 
+            white 20%, 
+            white 80%, 
+            transparent
+        );
+        mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    }
+    
+    .section__remove-mob {
+        height: 0;
+    }
 }
 
 /* DESIGN PROCESS SECTION */
 .section__design-body {
     display: flex;
     position: relative;
-    width: 50vw;
+    width: 55vw;
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
+    padding: 3rem;
 }
 
 .section__design-heading {
@@ -75,18 +193,18 @@
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    width: 55vw;
+    width: 100vw;
     overflow: hidden;
-    padding: 0 3rem 0 3rem;
-    font-size: 18px;
-    text-wrap:balance;
+    padding: 0 1rem 0 1rem;
+    font-size: 1.1rem;
+    text-wrap:pretty;
     justify-content: space-evenly;
+    margin: 0;
 }
 
-/* SERVICES SECTION */
 /* List item marker modifications */
 li::marker {
-    font-size: 3rem;
+    font-size: 2rem;
     vertical-align: middle;
 }
 
@@ -95,6 +213,35 @@ li {
     text-align: left;
 }
 
+/* Responsive design  for DESIGN PROCESS SECTION*/
+@media screen and (max-width: 720px) {
+    .section__design-body {
+        width: 100vw;
+        padding: 1rem;
+    }
+
+    .section__design-heading {
+        font-size: 2rem;
+        margin: 1rem 0 1rem 0;
+    }
+
+    .section__design-text {
+        width: 100vw;
+        font-size: 1rem;
+        padding: 0 1rem 0 1rem;
+        margin: 0;
+    }
+
+    li::marker {
+        font-size: 1rem;
+    }
+
+    li {
+        margin-bottom: 1rem;;
+    }
+}
+
+/* SERVICES SECTION */
 .section__services-image-container {
     display: flex;
     justify-content: space-evenly;

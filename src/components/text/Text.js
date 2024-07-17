@@ -4,7 +4,7 @@ import './Text.css';
 const Text = ({children}) => {
   useEffect(() => {
     function checkForVisibility() {
-        var headers = document.querySelectorAll(".text");
+        var headers = document.querySelectorAll(".text, .section__design-text");
         headers.forEach(function(header) {
           if (isElementInViewport(header)) {
             header.classList.add("text-visible");
@@ -15,13 +15,8 @@ const Text = ({children}) => {
     function isElementInViewport(el) {
         var rect = el.getBoundingClientRect();
       
-        return (
-          rect.top >= 0 &&
-          rect.left >= 0 &&
-          rect.bottom <=
-            (window.innerHeight || document.documentElement.clientHeight) &&
-          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
+        /* Element is in viewport if its any point below 80% of the screen */
+        return rect.top <= window.innerHeight * 0.8;
     }
       
     checkForVisibility();

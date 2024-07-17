@@ -7,12 +7,38 @@ p{
 }
 
 .footer {
-    height: 22vh;
+    height: 15vh;
     display: flex;
     box-sizing: border-box;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     padding: 2rem;
     text-align: left;
+}
+
+.footer__name {
+    margin-bottom: 5rem;
+}
+
+.footer__name-heading {
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 720px) {
+    .footer {
+        height: 20vh;
+        padding: 1rem;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .footer__name {
+        margin-bottom: 1rem;
+    }
+
+    .footer__name-heading {
+        margin-bottom: 0px;
+    }
+
 }
